@@ -34,7 +34,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[linear-gradient(180deg,#f8fbff_0%,#ffffff_45%,#e0f2fe_100%)] text-slate-900">
+      <body className="min-h-full flex flex-col bg-gradient-to-br from-sky-400 via-blue-600 to-blue-900 text-white">
         {children}
         <WhatsAppChat />
       </body>
