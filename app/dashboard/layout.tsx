@@ -28,18 +28,18 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     window.location.href = '/auth/login'
   }
 
-  const active = 'flex items-center gap-3 px-4 py-2 rounded-xl bg-blue-50 text-blue-700 font-semibold'
-  const inactive = 'flex items-center gap-3 px-4 py-2 rounded-xl text-slate-600 hover:bg-blue-50/80 hover:text-blue-700'
+  const active = 'flex items-center gap-3 px-4 py-2 rounded-xl bg-sky-500/20 text-white font-semibold'
+  const inactive = 'flex items-center gap-3 px-4 py-2 rounded-xl text-sky-200 hover:bg-sky-500/20 hover:text-white'
 
   return (
-    <div className="flex min-h-screen bg-[linear-gradient(180deg,#f8fbff_0%,#ffffff_55%,#e0f2fe_100%)]">
-      <aside className="w-72 border-r border-blue-100 bg-white/95 backdrop-blur">
-        <div className="p-6 border-b border-blue-100">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">LogiTrust</p>
-          <h1 className="mt-2 text-xl font-bold text-slate-900">Delivery Control</h1>
-          <p className="mt-1 text-sm text-slate-500">Dispatch, riders, and tracking in one place.</p>
+    <div className="flex min-h-screen bg-gradient-to-br from-sky-400 via-blue-600 to-blue-900">
+      <aside className="w-72 border-r border-sky-500/40 bg-blue-900/80 backdrop-blur">
+        <div className="p-6 border-b border-sky-500/40">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">LogiTrust</p>
+          <h1 className="mt-2 text-xl font-bold text-white">Delivery Control</h1>
+          <p className="mt-1 text-sm text-sky-300">Dispatch, riders, and tracking in one place.</p>
           {isDemoMode && (
-            <div className="mt-3 inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-900">
+            <div className="mt-3 inline-flex items-center rounded-full border border-amber-400/40 bg-amber-400/20 px-3 py-1 text-xs font-semibold text-amber-200">
               Demo mode
             </div>
           )}
@@ -62,10 +62,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             <span>Track</span>
           </a>
         </nav>
-        <div className="p-4 border-t border-blue-100">
+        <div className="p-4 border-t border-sky-500/40">
           <button
             onClick={handleLogout}
-            className="flex w-full items-center gap-3 rounded-xl px-4 py-2 text-slate-600 transition hover:bg-rose-50 hover:text-rose-600"
+            className="flex w-full items-center gap-3 rounded-xl px-4 py-2 text-sky-300 transition hover:bg-rose-500/20 hover:text-rose-300"
           >
             <LogOut size={18} />
             <span>Logout</span>
